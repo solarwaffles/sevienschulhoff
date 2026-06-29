@@ -189,7 +189,7 @@ export default function Hero() {
           View Research
         </a>
         <a
-          href="https://linkedin.com/in/sevien-schulhoff"
+          href="https://www.linkedin.com/in/sevienschulhoff/"
           target="_blank"
           rel="noopener noreferrer"
           style={{
