@@ -30,11 +30,14 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Show next.config
+        run: cat next.config.js || cat next.config.ts || echo "NO CONFIG FOUND"
+
       - name: Build
         run: npm run build
 
-      - name: List output
-        run: ls -la out/
+      - name: List all files after build
+        run: ls -la && ls -la .next/ || echo "no .next" && ls -la out/ || echo "no out"
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
